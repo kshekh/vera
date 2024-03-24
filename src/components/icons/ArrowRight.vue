@@ -1,0 +1,25 @@
+<script setup lang="ts">
+const props = defineProps({
+  iconClass: {
+    required: false,
+    default: ''
+  }
+})
+</script>
+
+<template>
+  <svg
+    :class="props.iconClass"
+    width="14"
+    height="15"
+    viewBox="0 0 14 15"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M6.99984 0.594726C7.83317 5.59473 13.6665 7.26139 13.6665 7.26139M13.6665 7.26139C13.6665 7.26139 7.83317 8.92806 6.99984 13.9281M13.6665 7.26139L0.333169 7.32475"
+      stroke="currentColor"
+      stroke-linejoin="bevel"
+    />
+  </svg>
+</template>

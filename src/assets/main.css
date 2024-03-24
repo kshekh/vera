@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Source Code Pro', monospace;
+  }
+}
+
+@layer utilities {
+  .bg-gradient {
+    background: linear-gradient(to right, #00bfbf 0%, #ff007b 100%);
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply flex font-normal items-center gap-2 rounded-full px-6 py-4 bg-primary relative border border-dark1;
+  }
+
+  .btn-primary > img {
+    @apply rotate-0 duration-200;
+  }
+  .btn-primary:hover > img {
+    @apply -rotate-45;
+  }
+
+  .btn-primary::after {
+    content: '';
+    @apply absolute h-full w-full top-0 left-0 bg-dark1 rounded-full z-[-1] duration-200;
+  }
+
+  .btn-primary:hover::after {
+    @apply top-1 left-1;
+  }
+
+  .swiper-pagination-bullet {
+    @apply !bg-dark1 h-2 w-2 rounded-full inline-block mx-12;
+  }
+
+  .swiper-pagination-bullet-active {
+    height: 6px;
+    width: 6px;
+    /* outline: 1px solid theme('colors.dark1');
+    outline-offset: 24px; */
+  }
+}
