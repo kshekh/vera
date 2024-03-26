@@ -14,11 +14,21 @@
   .bg-gradient {
     background: linear-gradient(to right, #00bfbf 0%, #ff007b 100%);
   }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-8 lg:px-11;
+  }
+
+  .section-height {
+    @apply min-h-dvh lg:max-h-[1000px];
+    /* min-height: 100dvh;
+    max-height: 1000px; */
+  }
 }
 
 @layer components {
   .btn-primary {
-    @apply flex font-normal items-center gap-2 rounded-full px-6 py-4 bg-primary relative border border-dark1;
+    @apply flex font-normal items-center gap-2 rounded-full px-4 xl:px-6 py-2 xl:py-4 bg-primary relative border border-dark1;
   }
 
   .btn-primary > img {

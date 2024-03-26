@@ -10,12 +10,14 @@ import AppFooter from '@/components/layout/AppFooter.vue'
 </script>
 
 <template>
-  <AppNav />
-  <HomeIntro />
-  <!-- <ReviewsSection /> -->
-  <HomeWhy />
-  <HomeBegin />
-  <TestimonialSection />
-  <SupportSection />
-  <AppFooter />
+  <div class="overflow-hidden">
+    <AppNav />
+    <HomeIntro />
+    <!-- <ReviewsSection /> -->
+    <HomeWhy />
+    <HomeBegin />
+    <TestimonialSection />
+    <SupportSection />
+    <AppFooter />
+  </div>
 </template>

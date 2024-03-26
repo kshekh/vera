@@ -7,11 +7,11 @@ import WhyImg1 from '@/assets/images/why-1.png'
 </script>
 
 <template>
-  <section class="min-h-screen border-b flex items-center">
-    <div class="max-w-7xl mx-auto px-11 grow">
+  <section class="border-b flex items-center section-height">
+    <div class="container-custom w-full">
       <h2 class="text-center text-5xl font-bold">Why Vera</h2>
 
-      <div class="relative flex items-center">
+      <div class="relative flex items-center max-w-[90vw]">
         <swiper
           :slides-per-view="1"
           :modules="[Navigation, Pagination]"
@@ -27,10 +27,11 @@ import WhyImg1 from '@/assets/images/why-1.png'
             bulletActiveClass: 'swiper-pagination-bullet-active'
           }"
           loop
+          autoplay
         >
           <swiper-slide v-for="index in 5" :key="index">
-            <div class="grid grid-cols-7 gap-12 mt-20">
-              <div class="pt-12 col-span-4">
+            <div class="grid md:grid-cols-7 gap-12 mt-20">
+              <div class="pt-12 md:col-span-4">
                 <label
                   for=""
                   class="border border-[#101010] py-2 font-bold px-9 text-sm rounded-full"
@@ -50,18 +51,18 @@ import WhyImg1 from '@/assets/images/why-1.png'
                   are backedup on our servers for reference purposes.
                 </p>
               </div>
-              <div class="col-span-3">
+              <div class="col-span-3 hidden md:block">
                 <img :src="WhyImg1" alt="" />
               </div>
             </div>
           </swiper-slide>
         </swiper>
 
-        <div class="swiper-pagination !overflow-visible"></div>
+        <div class="swiper-pagination hidden md:block"></div>
 
         <!-- Navigation Back -->
         <button
-          class="swiper-prev-why rounded-full border border-dark1 h-14 w-14 flex items-center justify-center absolute right-full mr-5 hover:text-primary hover:border-primary duration-200"
+          class="flex swiper-prev-why rounded-full border border-dark1 h-14 w-14 items-center justify-center absolute left-0 lg:left-auto top-full lg:top-auto mt-4 lg:mt-0 lg:right-full mr-5 hover:text-primary hover:border-primary duration-200"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -81,7 +82,7 @@ import WhyImg1 from '@/assets/images/why-1.png'
 
         <!-- Navigation Next -->
         <button
-          class="swiper-next-why rounded-full border border-dark1 h-14 w-14 flex items-center justify-center absolute left-full ml-5 hover:text-primary hover:border-primary duration-200"
+          class="flex swiper-next-why rounded-full border border-dark1 h-14 w-14 items-center justify-center absolute left-0 top-full lg:top-auto mt-4 lg:mt-0 lg:left-full ml-20 lg:ml-5 hover:text-primary hover:border-primary duration-200"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
