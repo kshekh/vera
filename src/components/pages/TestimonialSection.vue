@@ -13,7 +13,7 @@ import ScrambledArrow from '@/assets/icons/scrambled-arrow-1.svg'
 
 <template>
   <section class="min-h-screen border-b flex items-center">
-    <div class="container-custom grow">
+    <div class="container-custom grow py-8">
       <div class="max-w-[90vw]">
         <div class="flex flex-col items-center gap-4">
           <label for="" class="border border-dark1 py-2 font-bold px-9 text-sm rounded-full"

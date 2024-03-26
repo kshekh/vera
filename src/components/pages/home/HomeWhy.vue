@@ -8,7 +8,7 @@ import WhyImg1 from '@/assets/images/why-1.png'
 
 <template>
   <section class="border-b flex items-center section-height">
-    <div class="container-custom w-full">
+    <div class="container-custom w-full pb-20">
       <h2 class="text-center text-5xl font-bold">Why Vera</h2>
 
       <div class="relative flex items-center max-w-[90vw]">
