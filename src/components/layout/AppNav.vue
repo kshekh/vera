@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 import ArrowRight from '@/assets/icons/arrow-right.svg'
 import MenuIcon from '@/components/icons/MenuIcon.vue'
+import ButtonCustom from '@/components/ui/ButtonCustom.vue'
 
 const isMobileNavOpen = ref(false)
 
@@ -17,22 +18,28 @@ const toggleMobileNav = () => {
         >VERA</a
       >
       <a
-        class="text-base font-medium py-4 mr-12 hidden md:block hover:text-primary duration-200 cursor-pointer"
+        class="text-base font-source-pro font-medium py-4 mr-12 hidden md:block hover:text-primary duration-200 cursor-pointer"
         >Home</a
       >
       <a
-        class="text-base font-medium py-4 hidden md:block hover:text-primary duration-200 cursor-pointer"
+        class="text-base font-source-pro font-medium py-4 hidden md:block hover:text-primary duration-200 cursor-pointer"
         >About</a
       >
     </div>
     <div class="md:flex font-medium gap-5 hidden">
-      <button class="text-base hover:text-primary duration-200 cursor-pointer">Login</button>
-      <button
-        class="rounded-full text-xs border border-dark1 flex py-[10px] px-6 items-center gap-2 hover:bg-primary duration-100"
+      <button class="text-base font-source-pro hover:text-primary duration-200 cursor-pointer">
+        Login
+      </button>
+      <!-- <button
+        class="rounded-full font-source-pro text-xs border border-dark1 flex py-[10px] px-6 items-center gap-2 hover:bg-primary duration-100"
       >
         Sign Up
         <img :src="ArrowRight" />
-      </button>
+      </button> -->
+      <ButtonCustom variant="secondary" class="group">
+        Sign Up
+        <img :src="ArrowRight" class="group-hover:-rotate-45 duration-200" />
+      </ButtonCustom>
     </div>
     <button
       @click="toggleMobileNav"
@@ -74,22 +81,22 @@ const toggleMobileNav = () => {
         </svg>
       </button>
     </header>
-    <div class="flex flex-col gap-4 mt-8">
+    <div class="flex flex-col gap-4 mt-8 font-source-pro">
       <a class="text-2xl font-bold">Home</a>
       <a class="text-2xl font-bold">About</a>
       <div class="flex gap-5 mt-8">
-        <button
-          class="rounded-full text-xs border border-dark1 flex py-[10px] px-6 items-center justify-between grow"
-        >
-          Login
-          <img :src="ArrowRight" />
-        </button>
-        <button
-          class="rounded-full text-xs border border-dark1 flex py-[10px] px-6 items-center justify-between grow"
-        >
-          Sign Up
-          <img :src="ArrowRight" />
-        </button>
+        <ButtonCustom variant="secondary" class="group grow !bg-primary">
+          <div class="flex justify-between w-full">
+            Login
+            <img :src="ArrowRight" class="group-hover:-rotate-45 duration-200" />
+          </div>
+        </ButtonCustom>
+        <ButtonCustom variant="secondary" class="group grow !bg-primary">
+          <div class="flex justify-between w-full">
+            Sign Up
+            <img :src="ArrowRight" class="group-hover:-rotate-45 duration-200" />
+          </div>
+        </ButtonCustom>
       </div>
     </div>
   </div>

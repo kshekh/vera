@@ -13,23 +13,25 @@ import TwitterSvg from '@/assets/icons/twitter.svg'
 import TiktokSvg from '@/assets/icons/tiktok.svg'
 import YoutubeSvg from '@/assets/icons/youtube.svg'
 import CircleLine from '@/assets/icons/circle-line.svg'
+import ButtonCustom from '@/components/ui/ButtonCustom.vue'
+import TitleBadge from '@/components/ui/TitleBadge.vue'
+import XTwitter from '@/components/icons/XTwitter.vue'
 </script>
 
 <template>
   <section class="section-height border-b flex items-center pb-20">
     <div class="flex flex-col items-center font-bold max-w-5xl mx-auto px-8 my-8">
-      <label for="" class="border border-dark1 py-2 font-bold px-9 text-sm rounded-full"
-        >Your Intelligent Companion</label
-      >
+      <TitleBadge title="your intelligent companion" />
+
       <div class="mt-10 md:mt-6 relative">
         <img :src="HeaderLinesSvg" alt="" class="absolute -top-8 -left-4" />
-        <h1 class="text-5xl md:text-6xl lg:text-8xl text-center text-black">
+        <h1 class="title">
           DISCOVER THE <br />
           POWER OF VERA
         </h1>
       </div>
       <div class="mt-4 lg:mt-7">
-        <p class="md:text-lg text-body text-center max-w-[800px] font-montserrat font-normal">
+        <p class="md:text-lg text-body text-center max-w-[800px] font-normal">
           Are you ready to revolutionize the way you work? Meet Vera, your ultimate intelligent
           companion. More than just a virtual assistant, Vera is here to optimize your tasks, boost
           productivity, and bring a whole new level of convenience to your life!
@@ -41,10 +43,10 @@ import CircleLine from '@/assets/icons/circle-line.svg'
 
       <div class="mt-10 relative">
         <img :src="ArrowRadius" alt="" class="absolute right-full mr-8 bottom-0" />
-        <button class="btn-primary">
+        <ButtonCustom size="large" class="group">
           Get Started
-          <img :src="ArrowRight" alt="" />
-        </button>
+          <img :src="ArrowRight" alt="" class="group-hover:-rotate-45 duration-200" />
+        </ButtonCustom>
       </div>
     </div>
   </section>
@@ -68,9 +70,14 @@ import CircleLine from '@/assets/icons/circle-line.svg'
           <div class="absolute -bottom-32 left-0 hidden md:block">
             <div class="flex flex-col gap-6">
               <img :src="CircleLine" alt="" />
-              <div class="flex gap-6">
+              <div class="flex gap-6 items-center">
                 <img :src="FacebookSvg" alt="" />
-                <img :src="TwitterSvg" alt="" />
+                <!-- <img :src="TwitterSvg" alt="" /> -->
+                <div
+                  class="bg-dark1 rounded-full h-5 w-5 overflow-hidden flex items-center justify-center"
+                >
+                  <XTwitter class="h-2.5 w-2.5 fill-white" />
+                </div>
                 <img :src="TiktokSvg" alt="" />
                 <img :src="YoutubeSvg" alt="" />
               </div>

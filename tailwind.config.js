@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme");
 export default {
   content: [
     './index.html',
@@ -14,8 +15,10 @@ export default {
       }
     },
     fontFamily: {
+      sans: ["'Urbanist Variable'", ...defaultTheme.fontFamily.sans],
+      'source-pro': ["'Source Code Pro Variable'", ...defaultTheme.fontFamily.sans],
       montserrat: ['Montserrat', 'sans-serif'],
-      urban: ['Urbanist', 'sans-serif']
+      
     }
   },
   plugins: []

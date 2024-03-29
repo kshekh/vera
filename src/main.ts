@@ -1,4 +1,9 @@
 import './assets/main.css'
+// Supports weights 200-900
+import '@fontsource-variable/source-code-pro';
+// Supports weights 100-900
+import '@fontsource-variable/urbanist';
+import 'remixicon/fonts/remixicon.css';
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'

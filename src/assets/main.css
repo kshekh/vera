@@ -1,14 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@layer base {
-  body {
-    font-family: 'Source Code Pro', monospace;
-  }
-}
 
 @layer utilities {
   .bg-gradient {
@@ -27,24 +19,16 @@
 }
 
 @layer components {
-  .btn-primary {
-    @apply flex font-normal items-center gap-2 rounded-full px-4 xl:px-6 py-2 xl:py-4 bg-primary relative border border-dark1;
+  .title {
+    @apply text-5xl md:text-6xl lg:text-8xl text-center text-black font-source-pro;
   }
 
-  .btn-primary > img {
-    @apply rotate-0 duration-200;
-  }
-  .btn-primary:hover > img {
-    @apply -rotate-45;
+  .heading-1 {
+    @apply text-3xl xl:text-5xl font-bold font-source-pro leading-tight;
   }
 
-  .btn-primary::after {
-    content: '';
-    @apply absolute h-full w-full top-0 left-0 bg-dark1 rounded-full z-[-1] duration-200;
-  }
-
-  .btn-primary:hover::after {
-    @apply top-1 left-1;
+  .heading-2 {
+    @apply font-bold text-2xl font-source-pro;
   }
 
   .swiper-pagination-bullet {
@@ -54,7 +38,13 @@
   .swiper-pagination-bullet-active {
     height: 6px;
     width: 6px;
-    /* outline: 1px solid theme('colors.dark1');
-    outline-offset: 24px; */
+  }
+
+  .swiper-pagination-dot {
+    @apply h-2 w-2 rounded-full inline-block bg-dark1 duration-200;
+  }
+
+  .swiper-pagination-dot-active {
+    @apply h-1.5 w-1.5 rounded-full inline-block bg-dark1 outline outline-1 outline-offset-[24px] mx-4 duration-200;
   }
 }

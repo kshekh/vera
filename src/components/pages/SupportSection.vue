@@ -1,6 +1,9 @@
 <script setup lang="ts">
+import TitleBadge from '@/components/ui/TitleBadge.vue'
+
 import CTAImage from '@/assets/icons/cta-img.svg'
 import ArrowRight from '@/assets/icons/arrow-right.svg'
+import ButtonCustom from '../ui/ButtonCustom.vue'
 </script>
 
 <template>
@@ -11,21 +14,17 @@ import ArrowRight from '@/assets/icons/arrow-right.svg'
           <img :src="CTAImage" alt="" class="relative z-10" />
         </div>
         <div class="mt-11 row-start-1 lg:row-start-auto">
-          <label for="" class="border border-[#101010] py-2 font-bold px-9 text-sm rounded-full"
-            >GET SUPPORT</label
-          >
-          <h2 class="text-3xl xl:text-5xl font-bold text-[#101010] mt-9">
-            Elevate Your Productivity Today!
-          </h2>
-          <p class="xl:text-lg text-[#6F6F6F] montserrat my-9">
+          <TitleBadge title="get support" />
+          <h2 class="mt-9 heading-1 uppercase">Elevate Your Productivity Today!</h2>
+          <p class="xl:text-lg text-[#6F6F6F] my-9">
             Don't miss out on experiencing the future of work. Embrace the power of Vera and unlock
             a world of endlesspossibilities. Increase productivity, streamline tasks, and enjoy the
             convenience of a true intelligentcompanion
           </p>
-          <button class="btn-primary bg-white">
+          <ButtonCustom size="large" variant="secondary" class="group">
             Learn More
-            <img :src="ArrowRight" alt="" />
-          </button>
+            <img :src="ArrowRight" class="group-hover:-rotate-45 duration-200" />
+          </ButtonCustom>
         </div>
       </div>
     </div>

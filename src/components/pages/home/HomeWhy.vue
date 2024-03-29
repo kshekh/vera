@@ -3,13 +3,15 @@ import { Navigation, Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import 'swiper/css'
 import 'swiper/css/bundle'
-import WhyImg1 from '@/assets/images/why-1.png'
+
+import WhySwiperSlide from '@/components/ui/WhySwiperSlide.vue'
+import { WHY_VERA } from '@/data/why-vera'
 </script>
 
 <template>
   <section class="border-b flex items-center section-height">
     <div class="container-custom w-full pb-20">
-      <h2 class="text-center text-5xl font-bold">Why Vera</h2>
+      <h2 class="heading-1 text-center uppercase">Why Vera</h2>
 
       <div class="relative flex items-center max-w-[90vw]">
         <swiper
@@ -22,43 +24,28 @@ import WhyImg1 from '@/assets/images/why-1.png'
           :pagination="{
             el: '.swiper-pagination',
             clickable: true,
-            dynamicBullets: true,
-            bulletClass: 'swiper-pagination-bullet',
-            bulletActiveClass: 'swiper-pagination-bullet-active'
+            // dynamicBullets: true,
+            bulletClass: 'swiper-pagination-dot',
+            bulletActiveClass: 'swiper-pagination-dot-active'
           }"
           loop
           autoplay
         >
-          <swiper-slide v-for="index in 5" :key="index">
-            <div class="grid md:grid-cols-7 gap-12 mt-20">
-              <div class="pt-12 md:col-span-4">
-                <label
-                  for=""
-                  class="border border-[#101010] py-2 font-bold px-9 text-sm rounded-full"
-                  >LOCAL HOSTING OF DATA</label
-                >
-                <h3 class="uppercase font-bold text-2xl mt-6">Your Security is Our Priority</h3>
-                <p class="font-montserrat font-medium italic mt-4">
-                  With Vera, your personal data is in safe hands. Our advanced technology ensures
-                  that all data is handled locally, guaranteeing the utmost security and peace of
-                  mind.
-                </p>
-                <p class="font-montserrat text-body mt-2">
-                  Say goodbye to worries about your data's security. With Vera Homie, all your files
-                  are hosted locally, ensuringthat your personal information remains safe and
-                  private. We prioritize your security by storing your data in thedevice itself,
-                  eliminating the need for external databases. Rest assured, only your conversations
-                  are backedup on our servers for reference purposes.
-                </p>
-              </div>
-              <div class="col-span-3 hidden md:block">
-                <img :src="WhyImg1" alt="" />
-              </div>
-            </div>
+          <swiper-slide v-for="slide in WHY_VERA" :key="slide.title">
+            <WhySwiperSlide
+              :image="slide.image"
+              :badge-title="slide.badgeTitle"
+              :title="slide.title"
+              :paragraph-primary="slide.paragraphPrimary"
+              :paragraph-secondary="slide.paragraphSecondary"
+              :reversed="slide.reversed"
+            />
           </swiper-slide>
         </swiper>
 
-        <div class="swiper-pagination hidden md:block"></div>
+        <div
+          class="swiper-pagination hidden md:flex gap-6 !top-full justify-center !left-1/2 !-translate-x-1/2 !mt-8"
+        ></div>
 
         <!-- Navigation Back -->
         <button
