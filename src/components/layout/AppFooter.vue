@@ -1,9 +1,9 @@
 <script setup lang="ts"></script>
 
 <template>
-  <footer class="bg-black pb-8 min-h-dvh">
-    <div class="rounded-bl-[140px] rounded-br-[140px] h-64 bg-white"></div>
-    <section class="max-w-screen-xl mx-auto sm:px-11 -mt-52">
+  <footer class="bg-black pb-8 section">
+    <div class="rounded-bl-[140px] rounded-br-[140px] h-52 bg-white"></div>
+    <section class="max-w-screen-xl mx-auto sm:px-11 -mt-40">
       <div class="sm:rounded-full py-10 px-8 sm:px-20 bg-gradient">
         <h2
           class="text-3xl xl:text-6xl font-bold mb-3 text-center text-white font-source-pro uppercase"
@@ -33,7 +33,7 @@
       <div class="flex flex-wrap justify-center gap-x-40 gap-y-10 text-white">
         <div class="">
           <h3 class="font-bold text-xl mb-5 font-source-pro">Quick Links</h3>
-          <ul class="font-montserrat text-[#6F6F6F] flex flex-col gap-2">
+          <ul class="font-sans text-[#6F6F6F] flex flex-col">
             <li class="hover:text-white duration-200">
               <a href="/">Home</a>
             </li>
@@ -50,7 +50,7 @@
         </div>
         <div class="">
           <h3 class="font-bold text-xl mb-5 font-source-pro">The Project</h3>
-          <ul class="font-montserrat text-[#6F6F6F] flex flex-col gap-2">
+          <ul class="font-sans text-[#6F6F6F] flex flex-col">
             <li class="hover:text-white duration-200">
               <a href="/">Companions</a>
             </li>
@@ -71,31 +71,31 @@
         </div>
         <div class="">
           <h3 class="font-bold text-xl mb-5 font-source-pro">Social Media</h3>
-          <ul class="font-montserrat text-[#6F6F6F] flex gap-2">
+          <ul class="font-sans text-[#6F6F6F] flex gap-2">
             <li>
               <a
-                href="/"
+                href="https://www.instagram.com/veratheai/"
                 class="flex justify-center items-center w-10 h-10 bg-white/10 hover:bg-white/30 duration-200 text-white rounded-full"
                 ><i class="ri-facebook-fill"></i
               ></a>
             </li>
             <li>
               <a
-                href="/"
+                href="https://www.instagram.com/veratheai/"
                 class="flex justify-center items-center w-10 h-10 bg-white/10 hover:bg-white/30 duration-200 text-white rounded-full"
                 ><i class="ri-twitter-x-fill"></i
               ></a>
             </li>
             <li>
               <a
-                href="/"
+                href="https://www.instagram.com/veratheai/"
                 class="flex justify-center items-center w-10 h-10 bg-white/10 hover:bg-white/30 duration-200 text-white rounded-full"
                 ><i class="ri-linkedin-fill"></i
               ></a>
             </li>
             <li>
               <a
-                href="/"
+                href="https://www.instagram.com/veratheai/"
                 class="flex justify-center items-center w-10 h-10 bg-white/10 hover:bg-white/30 duration-200 text-white rounded-full"
                 ><i class="ri-instagram-line"></i
               ></a>

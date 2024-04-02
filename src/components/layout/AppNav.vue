@@ -12,34 +12,35 @@ const toggleMobileNav = () => {
 </script>
 
 <template>
-  <nav class="flex justify-between items-center mt-10 px-12 lg:px-24">
+  <header>
+  <nav class="flex justify-between items-center pt-10 px-12 lg:px-24 section">
     <div class="flex">
-      <a class="text-4xl md:text-5xl font-bold mr-14 hover:text-primary duration-200 cursor-pointer"
+      <a
+        class="text-4xl md:text-5xl font-medium mr-14 hover:text-primary duration-200 cursor-pointer font-outfit"
+        href="https://veratheai.com"
         >VERA</a
       >
       <a
         class="text-base font-source-pro font-medium py-4 mr-12 hidden md:block hover:text-primary duration-200 cursor-pointer"
+        href="https://veratheai.com"
         >Home</a
       >
       <a
         class="text-base font-source-pro font-medium py-4 hidden md:block hover:text-primary duration-200 cursor-pointer"
+        href="https://veratheai.com/about"
         >About</a
       >
     </div>
     <div class="md:flex font-medium gap-5 hidden">
       <button class="text-base font-source-pro hover:text-primary duration-200 cursor-pointer">
-        Login
+        <a href="https://veratheai.com/login" class="inline-block"> Login </a>
       </button>
-      <!-- <button
-        class="rounded-full font-source-pro text-xs border border-dark1 flex py-[10px] px-6 items-center gap-2 hover:bg-primary duration-100"
-      >
-        Sign Up
-        <img :src="ArrowRight" />
-      </button> -->
-      <ButtonCustom variant="secondary" class="group">
-        Sign Up
-        <img :src="ArrowRight" class="group-hover:-rotate-45 duration-200" />
-      </ButtonCustom>
+      <a href="https://veratheai.com/signup">
+        <ButtonCustom variant="secondary" class="group">
+          Sign Up
+          <img :src="ArrowRight" class="group-hover:-rotate-45 duration-200" />
+        </ButtonCustom>
+      </a>
     </div>
     <button
       @click="toggleMobileNav"
@@ -100,4 +101,5 @@ const toggleMobileNav = () => {
       </div>
     </div>
   </div>
+  </header>
 </template>

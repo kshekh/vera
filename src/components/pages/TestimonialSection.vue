@@ -11,7 +11,7 @@ import { TESTIMONIALS } from '@/data/testimonials'
 </script>
 
 <template>
-  <section class="min-h-screen border-b flex items-center">
+  <section class="section-height border-b flex items-center section">
     <div class="container-custom grow py-8">
       <div class="max-w-[90vw]">
         <div class="flex flex-col items-center gap-4">

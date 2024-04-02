@@ -1,6 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: #a6ff00;
+  }
+}
 
 @layer utilities {
   .bg-gradient {
@@ -13,8 +20,21 @@
 
   .section-height {
     @apply min-h-screen lg:max-h-[1000px];
-    /* min-height: 100dvh;
-    max-height: 1000px; */
+  }
+
+  @media screen and (min-width: 1024px) {
+    .main-container {
+      overflow-y: scroll;
+      height: 100vh;
+      scroll-snap-type: mandatory;
+      scroll-snap-points-y: repeat(100vh);
+      scroll-snap-type: y mandatory;
+    }
+
+    .section {
+      scroll-snap-align: start;
+      position: relative;
+    }
   }
 }
 

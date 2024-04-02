@@ -40,7 +40,7 @@ const props = defineProps<{
     </div>
     <div class="lg:flex justify-end relative hidden">
       <img :src="props.sideImage" alt="" class="object-contain" />
-      <img :src="ScrambledArrow" alt="" class="absolute -top-20" />
+      <!-- <img :src="ScrambledArrow" alt="" class="absolute -top-20" /> -->
     </div>
   </div>
 </template>

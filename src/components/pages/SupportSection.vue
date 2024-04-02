@@ -2,16 +2,18 @@
 import TitleBadge from '@/components/ui/TitleBadge.vue'
 
 import CTAImage from '@/assets/icons/cta-img.svg'
+import CTABlock from '@/assets/icons/cta-block.svg'
 import ArrowRight from '@/assets/icons/arrow-right.svg'
 import ButtonCustom from '../ui/ButtonCustom.vue'
 </script>
 
 <template>
-  <section class="section-height flex items-center border-b">
+  <section class="section-height flex items-center border-b section">
     <div class="container-custom grow py-8">
       <div class="grid lg:grid-cols-2 gap-12 xl:gap-24">
-        <div class="">
-          <img :src="CTAImage" alt="" class="relative z-10" />
+        <div class="relative">
+          <img :src="CTAImage" alt="" class="" />
+          <img :src="CTABlock" alt="" class="absolute top-[90%] right-3/4 hidden 2xl:block" />
         </div>
         <div class="mt-11 row-start-1 lg:row-start-auto">
           <TitleBadge title="get support" />

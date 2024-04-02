@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import HeaderLinesSvg from '@/assets/icons/3lines.svg'
+// import HeaderLinesSvg from '@/assets/icons/3lines.svg'
 import ArrowRight from '@/assets/icons/arrow-right.svg'
 import ArrowRadius from '@/assets/icons/arrow-radius.svg'
-import StarSvg from '@/assets/icons/star.svg'
+// import StarSvg from '@/assets/icons/star.svg'
 import HeroBgColors from '@/assets/icons/hero-bg-colors.svg'
 import HeroBlock from '@/assets/icons/block.svg'
 import HeroPlaceholder from '@/assets/images/placeholder.png'
@@ -19,12 +19,12 @@ import XTwitter from '@/components/icons/XTwitter.vue'
 </script>
 
 <template>
-  <section class="section-height border-b flex items-center pb-20">
+  <section class="h-[calc(100vh-96px)] lg:max-h-[1000px] border-b flex items-center pb-20 section">
     <div class="flex flex-col items-center font-bold max-w-5xl mx-auto px-8 my-8">
       <TitleBadge title="your intelligent companion" />
 
       <div class="mt-10 md:mt-6 relative">
-        <img :src="HeaderLinesSvg" alt="" class="absolute -top-8 -left-4" />
+        <!-- <img :src="HeaderLinesSvg" alt="" class="absolute -top-8 -left-4" /> -->
         <h1 class="title">
           DISCOVER THE <br />
           POWER OF VERA
@@ -36,9 +36,9 @@ import XTwitter from '@/components/icons/XTwitter.vue'
           companion. More than just a virtual assistant, Vera is here to optimize your tasks, boost
           productivity, and bring a whole new level of convenience to your life!
         </p>
-        <div class="flex justify-end -mr-20">
+        <!-- <div class="flex justify-end -mr-20">
           <img :src="StarSvg" alt="" />
-        </div>
+        </div> -->
       </div>
 
       <div class="mt-10 relative">
@@ -50,7 +50,7 @@ import XTwitter from '@/components/icons/XTwitter.vue'
       </div>
     </div>
   </section>
-  <section class="section-height border-b flex items-center">
+  <section class="section-height border-b flex items-center section">
     <div class="grow">
       <div class="relative md:pt-24 md:pb-40 flex justify-center">
         <div class="relative flex justify-center mx-8 md:mx-24">
@@ -64,22 +64,45 @@ import XTwitter from '@/components/icons/XTwitter.vue'
           <img
             :src="RoundedLine"
             alt=" "
-            class="absolute left-full bottom-0 hidden xl:inline-block"
+            class="absolute left-full bottom-0 hidden xl:inline-block -ml-6"
           />
 
           <div class="absolute -bottom-32 left-0 hidden md:block">
             <div class="flex flex-col gap-6">
               <img :src="CircleLine" alt="" />
               <div class="flex gap-6 items-center">
-                <img :src="FacebookSvg" alt="" />
-                <!-- <img :src="TwitterSvg" alt="" /> -->
-                <div
-                  class="bg-dark1 rounded-full h-5 w-5 overflow-hidden flex items-center justify-center"
+                <a
+                  href="https://www.instagram.com/veratheai/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <XTwitter class="h-2.5 w-2.5 fill-white" />
-                </div>
-                <img :src="TiktokSvg" alt="" />
-                <img :src="YoutubeSvg" alt="" />
+                  <img :src="FacebookSvg" alt="" />
+                </a>
+                <a
+                  href="https://www.instagram.com/veratheai/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div
+                    class="bg-dark1 rounded-full h-5 w-5 overflow-hidden flex items-center justify-center"
+                  >
+                    <XTwitter class="h-2.5 w-2.5 fill-white" />
+                  </div>
+                </a>
+                <a
+                  href="https://www.instagram.com/veratheai/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img :src="TiktokSvg" alt="" />
+                </a>
+                <a
+                  href="https://www.instagram.com/veratheai/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img :src="YoutubeSvg" alt="" />
+                </a>
               </div>
             </div>
           </div>
