@@ -27,14 +27,14 @@ const activeIndex = ref(0)
 </script>
 
 <template>
-  <section class="section-height flex items-center border-b section">
-    <div class="container-custom grow py-8">
+  <section class="lg:min-h-screen py-10 lg:py-20 flex items-center border-b section">
+    <div class="container-custom !px-3 lg:!px-8 grow  ">
       <div class="grid md:grid-cols-2 gap-10 xl:gap-24">
         <div class="">
           <TitleBadge title="let's begin" />
 
           <h2 class="mt-4 mb-9 heading-1 uppercase max-w-md">{{ POINTS[activeIndex].title }}</h2>
-          <ButtonCustom size="large" class="group">
+          <ButtonCustom size="large" class="group after:top-1 after:left-1 hover:after:top-0 hover:after:left-0 xl:after:left-0 xl:after:top-0 xl:hover:after:left-1 xl:hover:after:top-1">
             Get Started
             <img :src="ArrowRight" class="group-hover:-rotate-45 duration-500" />
           </ButtonCustom>

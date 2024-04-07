@@ -12,7 +12,7 @@ import ButtonCustom from '../ui/ButtonCustom.vue'
     <div class="container-custom grow py-8">
       <div class="grid lg:grid-cols-2 gap-12 xl:gap-24">
         <div class="relative">
-          <img :src="CTAImage" alt="" class="" />
+          <img :src="CTAImage" alt="" class="w-full" />
           <img :src="CTABlock" alt="" class="absolute top-[90%] right-3/4 hidden 2xl:block" />
         </div>
         <div class="mt-11 row-start-1 lg:row-start-auto">

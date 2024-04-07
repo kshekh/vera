@@ -15,7 +15,7 @@ const props = defineProps<{
 </script>
 
 <template>
-  <div class="grid md:grid-cols-2 gap-20 mt-20">
+  <div class="grid md:grid-cols-2 gap-20 lg:pt-10">
     <div :class="`pt-12`">
       <TitleBadge :title="props.badgeTitle" />
 

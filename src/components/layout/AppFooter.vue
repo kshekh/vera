@@ -14,7 +14,7 @@
           Click below to explore how Vera can transform your everyday life!
         </p>
 
-        <div class="rounded-full p-2 flex items-center bg-white/40 max-w-2xl mx-auto mt-16">
+        <div class="rounded-full p-2 flex items-center bg-white/40 max-w-2xl mx-auto  mt-5 lg:mt-16">
           <input
             type="text"
             class="bg-transparent w-full placeholder:text-white text-white font-montserrat ml-8 font-medium xl:text-xl focus:outline-none"

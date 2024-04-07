@@ -15,10 +15,10 @@ const props = defineProps<{
 </script>
 
 <template>
-  <div class="grid lg:grid-cols-2 mt-24">
-    <div class="pb-24">
+  <div class="grid lg:grid-cols-2 py-5 lg:py-10 ">
+    <div class="pb-12 lg:pb-24">
       <img :src="Quote" alt="" />
-      <p class="text-2xl text-[#0E1218] mt-9 mb-16">
+      <p class="text-2xl text-[#0E1218] py-5">
         {{ props.review }}
       </p>
       <div class="flex gap-4 items-center">
