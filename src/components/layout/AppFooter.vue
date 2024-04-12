@@ -1,12 +1,33 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { ref } from 'vue'
+import ButtonCustom from '@/components/ui/ButtonCustom.vue'
+const POINTS = [
+  {
+    title: `Connect to your device's network`,
+    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the industry's standard dummy text ever since the 1500s, when.`
+  },
+  {
+    title: `Connect your VERA device to a Wifi spot.`,
+    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the industry's standard dummy text ever since the 1500s, when.`
+  },
+  {
+    title: `Start chatting from any system in LAN."`,
+    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the industry's standard dummy text ever since the 1500s, when.`
+  }
+]
+const activeIndex = ref(0)
+</script>
 
 <template>
   <footer class="bg-black pb-8 section">
     <div class="rounded-bl-[140px] rounded-br-[140px] h-52 bg-white"></div>
     <section class="max-w-screen-xl mx-auto sm:px-11 -mt-40">
-      <div class="sm:rounded-full py-10 px-8 sm:px-20 bg-gradient">
+      <div class="sm:rounded-full py-8 2xl:py-10 px-8 sm:px-20 bg-gradient">
         <h2
-          class="text-3xl xl:text-6xl font-bold mb-3 text-center text-white font-source-pro uppercase"
+          class="text-3xl xl:text-5xl 2xl:text-6xl font-bold mb-3 text-center text-white font-source-pro uppercase"
         >
           Ready to Get Started?
         </h2>
@@ -14,17 +35,16 @@
           Click below to explore how Vera can transform your everyday life!
         </p>
 
-        <div class="rounded-full p-2 flex items-center bg-white/40 max-w-2xl mx-auto  mt-5 lg:mt-16">
+        <div class="rounded-full p-2 flex items-center bg-white/40 max-w-2xl mx-auto mt-5 lg:mt-16">
           <input
             type="text"
-            class="bg-transparent w-full placeholder:text-white text-white font-montserrat ml-8 font-medium xl:text-xl focus:outline-none"
+            class="bg-transparent w-full placeholder:text-white text-white font-montserrat ml-3 md:ml-8 font-medium xl:text-xl focus:outline-none"
             placeholder="james@gmail.com"
           />
-          <button
-            class="hidden md:inline-block px-5 xl:px-[45px] whitespace-nowrap py-[7px] font-bold xl:text-lg bg-white rounded-full self-center uppercase font-source-pro hover:bg-primary duration-200"
-          >
-            Get Started
-          </button>
+ 
+          <ButtonCustom size="large" class="group whitespace-nowrap after:top-1 after:left-1 hover:after:top-0 hover:after:left-0 xl:after:left-0 xl:after:top-0 xl:hover:after:left-1 xl:hover:after:top-1">
+            Get Start 
+          </ButtonCustom>
         </div>
       </div>
     </section>

@@ -11,7 +11,7 @@ const props = defineProps<{
   <label
     for=""
     :class="
-      `border border-[#101010] py-2 font-bold px-3 lg:px-9 text-sm rounded-full font-source-pro uppercase ` +
+      `border border-[#101010] py-2 font-bold px-9 text-sm rounded-full font-source-pro uppercase inline-block ` +
       props.class
     "
     >{{ props.title }}</label

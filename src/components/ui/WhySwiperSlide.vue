@@ -15,7 +15,7 @@ const props = defineProps<{
 </script>
 
 <template>
-  <div class="grid md:grid-cols-2 gap-20 lg:pt-10">
+  <div class="grid md:grid-cols-2 gap-20 md:mt-20">
     <div :class="`pt-12`">
       <TitleBadge :title="props.badgeTitle" />
 
@@ -30,7 +30,7 @@ const props = defineProps<{
     <div
       :class="`hidden md:flex justify-center ${props.reversed ? 'col-start-1 row-start-1' : ''}`"
     >
-      <img :src="props.image" alt="" class="max-h-[450px]" />
+      <img :src="props.image" alt="" class="max-h-[450px] object-contain" />
     </div>
   </div>
 </template>

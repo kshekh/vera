@@ -22,7 +22,7 @@
     @apply min-h-screen lg:max-h-[1000px];
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 768px) {
     .main-container {
       overflow-y: scroll;
       height: 100vh;
@@ -36,6 +36,13 @@
       position: relative;
     }
   }
+
+  .line-clamp-1 {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
 }
 
 @layer components {
@@ -44,11 +51,13 @@
   }
 
   .heading-1 {
-    @apply text-3xl xl:text-5xl font-bold font-source-pro leading-tight;
+    @apply font-bold font-source-pro leading-tight;
+    font-size: clamp(2rem, 3vw, 3rem);
   }
 
   .heading-2 {
-    @apply font-bold text-2xl font-source-pro;
+    @apply font-bold font-source-pro;
+    font-size: clamp(1.2rem, 1.6vw, 1.6rem);
   }
 
   .swiper-pagination-bullet {

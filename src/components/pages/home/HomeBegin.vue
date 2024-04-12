@@ -27,8 +27,8 @@ const activeIndex = ref(0)
 </script>
 
 <template>
-  <section class="lg:min-h-screen py-10 lg:py-20 flex items-center border-b section">
-    <div class="container-custom !px-3 lg:!px-8 grow  ">
+  <section class="section-height flex items-center border-b section">
+    <div class="container-custom grow py-8">
       <div class="grid md:grid-cols-2 gap-10 xl:gap-24">
         <div class="">
           <TitleBadge title="let's begin" />

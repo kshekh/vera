@@ -12,8 +12,7 @@ const toggleMobileNav = () => {
 </script>
 
 <template>
-  <header class="lg:fixed bg-white top-0 inset-x-0 z-30">
-  <nav class="flex justify-between items-center pt-10 px-12 lg:px-24 section">
+  <nav class="flex justify-between items-center pt-10 px-12 lg:px-24">
     <div class="flex">
       <a
         class="text-4xl md:text-5xl font-medium mr-14 hover:text-primary duration-200 cursor-pointer font-outfit"
@@ -36,7 +35,7 @@ const toggleMobileNav = () => {
         <a href="https://veratheai.com/login" class="inline-block"> Login </a>
       </button>
       <a href="https://veratheai.com/signup">
-        <ButtonCustom variant="secondary" class="group hover:bg-primary">
+        <ButtonCustom variant="secondary" class="group">
           Sign Up
           <img :src="ArrowRight" class="group-hover:-rotate-45 duration-200" />
         </ButtonCustom>
@@ -52,10 +51,10 @@ const toggleMobileNav = () => {
 
   <!-- Mobile Nav -->
   <div
-    :class="`md:hidden fixed top-0 bottom-0 w-full bg-primary z-50 py-10 px-12 duration-300 ease-in-out ${isMobileNavOpen ? 'left-0' : '-left-full'}`"
+    :class="`md:hidden fixed top-0 bottom-0 w-full bg-primary z-50 pt-10 px-12 duration-300 ease-in-out ${isMobileNavOpen ? 'left-0' : '-left-full'}`"
   >
     <header class="flex justify-between items-center border-b border-black pb-5">
-      <a class="text-4xl font-bold">VERA</a>
+      <a class="text-4xl font-medium font-outfit">VERA</a>
       <button @click="toggleMobileNav" class="rotate-45 text-black">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -101,5 +100,5 @@ const toggleMobileNav = () => {
       </div>
     </div>
   </div>
-  </header>
+ 
 </template>

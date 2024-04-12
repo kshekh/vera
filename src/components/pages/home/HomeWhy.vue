@@ -9,11 +9,11 @@ import { WHY_VERA } from '@/data/why-vera'
 </script>
 
 <template>
-  <section class="border-b flex items-center py-10 lg:py-20 lg:min-h-screen section group overflow-hidden">
-    <div class="container-custom !px-3 lg:!px-8 w-full lg:pb-20">
+  <section class="border-b flex items-center section-height section">
+    <div class="container-custom w-full py-20 lg:!px-24">
       <h2 class="heading-1 text-center uppercase">Why Vera</h2>
 
-      <div class="relative  max-w-[90vw] ">
+      <div class="relative flex items-center">
         <swiper
           :slides-per-view="1"
           :modules="[Navigation, Pagination]"
@@ -44,12 +44,12 @@ import { WHY_VERA } from '@/data/why-vera'
         </swiper>
 
         <div
-          class="swiper-pagination hidden xl:flex gap-6 !top-full justify-center !left-1/2 !-translate-x-1/2 !mt-8"
+          class="swiper-pagination hidden md:flex gap-6 !top-full justify-center !left-1/2 !-translate-x-1/2 !mt-8"
         ></div>
 
         <!-- Navigation Back -->
         <button
-          class="opacity-0 -left-full group-hover:-left-20 group-hover:opacity-100 ease-in-out duration-200 hidden xl:flex swiper-prev-why rounded-full border border-dark1 h-14 w-14 items-center justify-center absolute top-1/2 -translate-y-1/2 hover:text-primary hover:border-primary  "
+          class="hidden lg:flex swiper-prev-why rounded-full border border-dark1 h-14 w-14 items-center justify-center absolute top-auto mt-0 right-full mr-5 hover:text-primary hover:border-primary duration-200"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +69,7 @@ import { WHY_VERA } from '@/data/why-vera'
 
         <!-- Navigation Next -->
         <button
-          class="opacity-0 -right-full group-hover:-right-20 group-hover:opacity-100 ease-in-out duration-200 hidden xl:flex swiper-next-why rounded-full border border-dark1 h-14 w-14 items-center justify-center absolute top-1/2 -translate-y-1/2 hover:text-primary hover:border-primary  "
+          class="hidden lg:flex swiper-next-why rounded-full border border-dark1 h-14 w-14 items-center justify-center absolute top-auto mt-0 left-full ml-5 hover:text-primary hover:border-primary duration-200"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -86,40 +86,6 @@ import { WHY_VERA } from '@/data/why-vera'
             />
           </svg>
         </button>
-     
-<!-- Mobile navigation -->
-
-<div class="w-full flex xl:hidden justify-center gap-5">
-  <buton class="swiper-prev-why rounded-full border border-dark1 h-10 w-10 items-center justify-center hover:text-primary hover:border-primary flex "><svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
-            />
-          </svg></buton>
-          <buton class="swiper-next-why rounded-full border border-dark1 h-10 w-10 items-center justify-center hover:text-primary hover:border-primary flex "><svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-            />
-          </svg></buton>
- </div>
-
       </div>
     </div>
   </section>
