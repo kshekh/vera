@@ -82,19 +82,16 @@ const toggleMobileNav = () => {
       </button>
     </header>
     <div class="flex flex-col gap-4 mt-8 font-source-pro">
-      <a class="text-2xl font-bold">Home</a>
-      <a class="text-2xl font-bold">About</a>
+      <a class="text-2xl font-semibold">Home</a>
+      <a class="text-2xl font-semibold">About</a>
       <div class="flex gap-5 mt-8">
-        <ButtonCustom variant="secondary" class="group grow !bg-primary">
-          <div class="flex justify-between w-full">
-            Login
-            <img :src="ArrowRight" class="group-hover:-rotate-45 duration-200" />
-          </div>
-        </ButtonCustom>
-        <ButtonCustom variant="secondary" class="group grow !bg-primary">
+        <button class="text-base font-source-pro hover:text-primary duration-200 cursor-pointer">
+        <a href="https://veratheai.com/login" class="inline-block font-medium"> Login </a>
+      </button>
+        <ButtonCustom variant="secondary" class="group after:top-1 after:left-1 hover:after:top-0 hover:after:left-0 xl:after:left-0 xl:after:top-0 xl:hover:after:left-1 xl:hover:after:top-1">
           <div class="flex justify-between w-full">
             Sign Up
-            <img :src="ArrowRight" class="group-hover:-rotate-45 duration-200" />
+            <img :src="ArrowRight" class="group-hover:-rotate-45 duration-200 ml-2" />
           </div>
         </ButtonCustom>
       </div>

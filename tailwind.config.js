@@ -19,6 +19,9 @@ export default {
       'source-pro': ['Source Code Pro Variable', ...defaultTheme.fontFamily.sans],
       montserrat: ['Montserrat', 'sans-serif'],
       outfit: ['Outfit', 'sans-serif']
+    },
+    backgroundImage:{
+      'gradient-1':'linear-gradient(102.22deg, #FF007B 3.4%, #00BFBF 30.93%, #FF6600 57.01%, #959370 76.82%, #A6FF00 100%)'
     }
   },
   plugins: []

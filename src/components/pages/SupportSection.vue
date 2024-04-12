@@ -23,7 +23,7 @@ import ButtonCustom from '../ui/ButtonCustom.vue'
             a world of endlesspossibilities. Increase productivity, streamline tasks, and enjoy the
             convenience of a true intelligentcompanion
           </p>
-          <ButtonCustom size="large" variant="secondary" class="group">
+          <ButtonCustom size="large" variant="secondary"  class="group after:top-1 after:left-1 hover:after:top-0 hover:after:left-0 xl:after:left-0 xl:after:top-0 xl:hover:after:left-1 xl:hover:after:top-1"> 
             Learn More
             <img :src="ArrowRight" class="group-hover:-rotate-45 duration-200" />
           </ButtonCustom>

@@ -25,7 +25,7 @@ const activeIndex = ref(0)
   <footer class="bg-black pb-8 section">
     <div class="rounded-bl-[140px] rounded-br-[140px] h-52 bg-white"></div>
     <section class="max-w-screen-xl mx-auto sm:px-11 -mt-40">
-      <div class="sm:rounded-full py-8 2xl:py-10 px-8 sm:px-20 bg-gradient">
+      <div class="rounded-3xl lg:rounded-full py-8 2xl:py-10 px-8 sm:px-20 bg-gradient">
         <h2
           class="text-3xl xl:text-5xl 2xl:text-6xl font-bold mb-3 text-center text-white font-source-pro uppercase"
         >
@@ -42,17 +42,17 @@ const activeIndex = ref(0)
             placeholder="james@gmail.com"
           />
  
-          <ButtonCustom size="large" class="group whitespace-nowrap after:top-1 after:left-1 hover:after:top-0 hover:after:left-0 xl:after:left-0 xl:after:top-0 xl:hover:after:left-1 xl:hover:after:top-1">
+          <ButtonCustom size="large" class="group whitespace-nowrap border-0 !bg-white after:top-1 after:left-1 hover:after:top-0 hover:after:left-0 xl:after:left-0 xl:after:top-0 xl:hover:after:left-1 xl:hover:after:top-1">
             Get Start 
           </ButtonCustom>
         </div>
       </div>
     </section>
-    <section class="container-custom mt-24">
+    <section class="container-custom mt-10 sm:mt-24">
       <!-- Links -->
-      <div class="flex flex-wrap justify-center gap-x-40 gap-y-10 text-white">
+      <div class="grid grid-cols-2 sm:grid-cols-3 2xl:flex justify-between max-w-screen-lg mx-auto 2xl:gap-x-20 gap-y-10 text-white">
         <div class="">
-          <h3 class="font-bold text-xl mb-5 font-source-pro">Quick Links</h3>
+          <h3 class="font-bold sm:text-xl mb-5 font-source-pro">Quick Links</h3>
           <ul class="font-sans text-[#6F6F6F] flex flex-col">
             <li class="hover:text-white duration-200">
               <a href="/">Home</a>
@@ -69,7 +69,7 @@ const activeIndex = ref(0)
           </ul>
         </div>
         <div class="">
-          <h3 class="font-bold text-xl mb-5 font-source-pro">The Project</h3>
+          <h3 class="font-bold sm:text-xl mb-5 font-source-pro">The Project</h3>
           <ul class="font-sans text-[#6F6F6F] flex flex-col">
             <li class="hover:text-white duration-200">
               <a href="/">Companions</a>
@@ -89,7 +89,7 @@ const activeIndex = ref(0)
             </li>
           </ul>
         </div>
-        <div class="">
+        <div class="col-span-3 sm:col-span-1">
           <h3 class="font-bold text-xl mb-5 font-source-pro">Social Media</h3>
           <ul class="font-sans text-[#6F6F6F] flex gap-2">
             <li>
@@ -126,7 +126,7 @@ const activeIndex = ref(0)
 
       <!-- Copyright -->
       <div
-        class="bg-white/25 whitespace-nowrap flex-wrap gap-4 py-9 px-14 sm:rounded-full flex items-center justify-between text-[#6F6F6F] mt-24"
+        class="bg-white/25 whitespace-nowrap flex-wrap gap-4 py-9 px-14 sm:rounded-full flex items-center justify-between text-[#6F6F6F] mt-10 sm:mt-24"
       >
         <div class="">Copyright ©2024 VERA</div>
         <ul class="flex flex-wrap items-center gap-3">

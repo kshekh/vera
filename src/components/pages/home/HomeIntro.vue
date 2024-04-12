@@ -8,12 +8,17 @@ import HeroBlock from '@/assets/icons/block.svg'
 import HeroPlaceholder from '@/assets/images/placeholder.png'
 
 import RoundedLine from '@/assets/icons/rounded-line.svg'
- 
+
 import CircleLine from '@/assets/icons/circle-line.svg'
 import ButtonCustom from '@/components/ui/ButtonCustom.vue'
 import TitleBadge from '@/components/ui/TitleBadge.vue'
- 
+
 import AppNav from '@/components/layout/AppNav.vue'
+
+
+ 
+
+
 </script>
 
 <template>
@@ -43,7 +48,10 @@ import AppNav from '@/components/layout/AppNav.vue'
 
         <div class="mt-10 relative">
           <img :src="ArrowRadius" alt="" class="absolute right-full mr-8 bottom-0" />
-          <ButtonCustom size="large" class="group after:top-1 after:left-1 hover:after:top-0 hover:after:left-0 xl:after:left-0 xl:after:top-0 xl:hover:after:left-1 xl:hover:after:top-1">
+          <ButtonCustom
+            size="large"
+            class="group after:top-1 after:left-1 hover:after:top-0 hover:after:left-0 xl:after:left-0 xl:after:top-0 xl:hover:after:left-1 xl:hover:after:top-1"
+          >
             Get Started
             <img :src="ArrowRight" alt="" class="group-hover:-rotate-45 duration-200" />
           </ButtonCustom>
@@ -52,121 +60,77 @@ import AppNav from '@/components/layout/AppNav.vue'
     </div>
   </section>
   <section class="section-height border-b flex items-center section">
-    <div class="grow">
-      <div class="relative md:pt-24 md:pb-40 flex justify-center">
-        <div class="relative flex justify-center mx-8 g-red-100">
+    <div class="grow px-5 xl:px-20 2xl:px-0">
+      <div class="relative md:py-24 flex justify-center">
+        <div class="relative max-w-screen-xl w-full ">
+      
+
+<div class="relative flex justify-center items-center w-full">
+          <div class="px-5 z-10 absolute inset-x-0 -bottom-5"><div class="bg-gradient-1 h-40 rounded-full w-full relative"></div></div>
+          <div class="max-h-[calc(100vh-250px)] w-full overflow-hidden mb-5">
+          <img :src="HeroPlaceholder" alt="" class="z-10 relative max-h-full w-full " />
+        </div>
           <img
             :src="HeroBlock"
             alt=""
-            class="absolute -top-16 -left-14 z-20 h-20 lg:h-auto hidden md:inline-block w-[12vw] max-w-56"
-          />
-          <img :src="HeroPlaceholder" alt="" class="z-10 w-full" />
-          <img :src="HeroBgColors" alt="" class="absolute -bottom-5 w-full" />
-          <img
-            :src="RoundedLine"
-            alt=" "
-            class="absolute left-full bottom-0 inline-block -ml-6 w-[7.3vw]"
-          />
+            class="absolute -top-5 xl:-top-20 -left-5 xl:-left-20 z-20 w-20 xl:w-auto "
+          /> 
 
-          <div class="absolute -bottom-32 left-0 hidden md:block">
-            <div class="flex flex-col gap-6">
-              <img :src="CircleLine" alt="" />
-              <div class="flex gap-6 items-center">
-                <a
-                  href="https://www.instagram.com/veratheai/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="text-black hover:text-primary ease-in-out duration-300 text-3xl"
-                >
-                  <!-- <img :src="FacebookSvg" alt="" /> --> <i class="ri-facebook-circle-fill"></i>
-                </a>
-                <a
-                  href="https://www.instagram.com/veratheai/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="text-black hover:text-primary ease-in-out duration-300 text-3xl"
-                >
+</div>
+          <div class="flex flex-wrap items-center gap-5 justify-between pt-10">
+            <div class="flex justify-center w-full lg:w-auto">
+              <div class="flex flex-col gap-6">
+                <img :src="CircleLine" alt="" />
+                <div class="flex gap-6 items-center">
                   
-                  <i class="ri-twitter-x-fill"></i>
-               
-                </a>
-                <a
-                  href="https://www.instagram.com/veratheai/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="text-black hover:text-primary ease-in-out duration-300 text-3xl"
-                >
-                <i class="ri-tiktok-fill"></i>
-                </a>
-                <a
-                  href="https://www.instagram.com/veratheai/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="text-black hover:text-primary ease-in-out duration-300 text-3xl"
-                >
-                <i class="ri-youtube-fill"></i>
-                </a>
+                  <a
+                    href="https://www.instagram.com/veratheai/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-black hover:text-primary ease-in-out duration-300 text-4xl"
+                  >
+                    <!-- <img :src="FacebookSvg" alt="" /> -->
+                    <i class="ri-facebook-circle-fill"></i>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/veratheai/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-white hover:bg-primary bg-black ease-in-out duration-300 text-lg w-8 h-8 rounded-full flex justify-center items-center"
+                  >
+                    <i class="ri-twitter-x-fill"></i>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/veratheai/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-black hover:text-primary ease-in-out duration-300 text-3xl"
+                  >
+                    <i class="ri-tiktok-fill"></i>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/veratheai/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-white hover:bg-primary bg-black ease-in-out duration-300 text-xl w-8 h-8 rounded-full flex justify-center items-center"
+                  >
+                    <i class="ri-youtube-fill"></i>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="absolute -bottom-32 right-0 xl:-right-40 hidden md:block">
-            <p class="text-base mr-5 text-body montserrat">
-              <span class="block">Choose the partner better suits you: </span><span class="font-bold">VERA</span>,
-              <span class="font-bold">VERA-HOMIE</span> or
-              <span class="font-bold">VERA-LITE</span>
-            </p>
+            <div class="flex justify-center w-full lg:w-auto">
+              <p class="text-base mr-5 text-body montserrat">
+                <span class="block">Choose the partner better suits you: </span
+                ><span class="font-bold">VERA</span>, <span class="font-bold">VERA-HOMIE</span> or
+                <span class="font-bold">VERA-LITE</span>
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="grid sm:grid-cols-2 justify-center gap-8 px-8 md:hidden mt-20">
-        <div class="flex flex-col items-center md:items-start gap-6">
-          <img :src="CircleLine" alt="" class="hidden md:inline-block" />
-          <div class="flex gap-6">
-            <div class="flex gap-6 items-center">
-                <a
-                  href="https://www.instagram.com/veratheai/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="text-black hover:text-primary ease-in-out duration-300 text-3xl"
-                >
-                  <!-- <img :src="FacebookSvg" alt="" /> --> <i class="ri-facebook-circle-fill"></i>
-                </a>
-                <a
-                  href="https://www.instagram.com/veratheai/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="text-black hover:text-primary ease-in-out duration-300 text-3xl"
-                >
-                  
-                  <i class="ri-twitter-x-fill"></i>
-               
-                </a>
-                <a
-                  href="https://www.instagram.com/veratheai/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="text-black hover:text-primary ease-in-out duration-300 text-3xl"
-                >
-                <i class="ri-tiktok-fill"></i>
-                </a>
-                <a
-                  href="https://www.instagram.com/veratheai/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="text-black hover:text-primary ease-in-out duration-300 text-3xl"
-                >
-                <i class="ri-youtube-fill"></i>
-                </a>
-              </div>
-          </div>
-        </div>
-        <p class="text-base mr-5 text-body montserrat">
-          <span class="block">Choose the partner better suits you:</span> <span class="font-bold">VERA</span>,
-          <span class="font-bold">VERA-HOMIE</span> or
-          <span class="font-bold">VERA-LITE</span>
-        </p>
-      </div>
+     
     </div>
   </section>
 </template>
