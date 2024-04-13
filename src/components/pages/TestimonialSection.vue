@@ -12,7 +12,7 @@ import ArrowRight from '../icons/ArrowRight.vue'
 </script>
 
 <template>
-  <section class="section-height border-b flex items-center section">
+  <section class="py-10 sm:py-20 lg:py-0 min-h-screen border-b flex items-center section">
     <div class="container-custom grow py-8">
       <div class="max-w-[90vw]">
         <div class="flex flex-col items-center gap-4">

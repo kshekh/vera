@@ -27,7 +27,7 @@ const activeIndex = ref(0)
 </script>
 
 <template>
-  <section class="section-height flex items-center border-b section">
+  <section class="py-10 sm:py-20 lg:py-0 min-h-screen flex items-center border-b section">
     <div class="container-custom grow py-8">
       <div class="grid md:grid-cols-2 gap-10 xl:gap-24">
         <div class="">

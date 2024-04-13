@@ -12,7 +12,7 @@ const toggleMobileNav = () => {
 </script>
 
 <template>
-  <nav class="flex justify-between items-center pt-10 px-12 lg:px-24">
+  <nav class="flex justify-between items-center pt-10 px-12 lg:px-24 absolute top-0 inset-x-0">
     <div class="flex">
       <a
         class="text-4xl md:text-5xl font-medium mr-14 hover:text-primary duration-200 cursor-pointer font-outfit"
@@ -35,7 +35,8 @@ const toggleMobileNav = () => {
         <a href="https://veratheai.com/login" class="inline-block"> Login </a>
       </button>
       <a href="https://veratheai.com/signup">
-        <ButtonCustom variant="secondary" class="group">
+        <ButtonCustom variant="secondary" class="group after:top-1 after:left-1 hover:after:top-0 hover:after:left-0 xl:after:left-0 xl:after:top-0 xl:hover:after:left-1 xl:hover:after:top-1">
+          
           Sign Up
           <img :src="ArrowRight" class="group-hover:-rotate-45 duration-200" />
         </ButtonCustom>

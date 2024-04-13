@@ -25,7 +25,7 @@ const activeIndex = ref(0)
   <footer class="bg-black pb-8 section">
     <div class="rounded-bl-[140px] rounded-br-[140px] h-52 bg-white"></div>
     <section class="max-w-screen-xl mx-auto sm:px-11 -mt-40">
-      <div class="rounded-3xl lg:rounded-full py-8 2xl:py-10 px-8 sm:px-20 bg-gradient">
+      <div class="md:rounded-3xl lg:rounded-full py-8 2xl:py-10 px-8 sm:px-20 bg-gradient">
         <h2
           class="text-3xl xl:text-5xl 2xl:text-6xl font-bold mb-3 text-center text-white font-source-pro uppercase"
         >

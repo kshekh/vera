@@ -16,9 +16,9 @@ const props = defineProps<{
 
 <template>
   <div class="grid lg:grid-cols-2 mt-10">
-    <div class="pb-24">
-      <img :src="Quote" alt="" />
-      <p class="text-2xl text-[#0E1218] mt-9 mb-16">
+    <div class="pb-20">
+      <img :src="Quote" alt="" className="w-8 xl:w-auto" />
+      <p class="text-2xl text-[#0E1218] my-10">
         {{ props.review }}
       </p>
       <div class="flex gap-4 items-center">

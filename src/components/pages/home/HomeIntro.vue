@@ -22,7 +22,7 @@ import AppNav from '@/components/layout/AppNav.vue'
 </script>
 
 <template>
-  <section class="min-h-screen lg:max-h-[1000px] border-b pb-20 section flex flex-col">
+  <section class="py-10 sm:py-20 lg:py-0 min-h-screen border-b pb-20 section flex flex-col">
     <AppNav />
     <div class="grow flex items-center">
       <div class="flex flex-col items-center font-bold max-w-5xl mx-auto px-8 my-8">
@@ -59,8 +59,8 @@ import AppNav from '@/components/layout/AppNav.vue'
       </div>
     </div>
   </section>
-  <section class="section-height border-b flex items-center section">
-    <div class="grow px-5 xl:px-20 2xl:px-0">
+  <section class="py-10 sm:py-20 lg:py-0 min-h-screen border-b flex items-center section">
+    <div class="grow container-custom">
       <div class="relative md:py-24 flex justify-center">
         <div class="relative max-w-screen-xl w-full ">
       
@@ -73,12 +73,12 @@ import AppNav from '@/components/layout/AppNav.vue'
           <img
             :src="HeroBlock"
             alt=""
-            class="absolute -top-5 xl:-top-20 -left-5 xl:-left-20 z-20 w-20 xl:w-auto "
+            class="absolute -top-5 xl:-top-20 -left-5 xl:-left-20 z-20 w-32 lg:w-40 xl:w-auto "
           /> 
 
 </div>
-          <div class="flex flex-wrap items-center gap-5 justify-between pt-10">
-            <div class="flex justify-center w-full lg:w-auto">
+          <div class="flex  md:flex-row items-center gap-5 justify-between pt-10">
+            <div class="flex justify-center md:justify-start w-full lg:w-auto">
               <div class="flex flex-col gap-6">
                 <img :src="CircleLine" alt="" />
                 <div class="flex gap-6 items-center">
@@ -120,7 +120,7 @@ import AppNav from '@/components/layout/AppNav.vue'
               </div>
             </div>
 
-            <div class="flex justify-center w-full lg:w-auto">
+            <div class="flex justify-center md:justify-end w-full lg:w-auto">
               <p class="text-base mr-5 text-body montserrat">
                 <span class="block">Choose the partner better suits you: </span
                 ><span class="font-bold">VERA</span>, <span class="font-bold">VERA-HOMIE</span> or

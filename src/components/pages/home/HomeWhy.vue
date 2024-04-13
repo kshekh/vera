@@ -9,7 +9,7 @@ import { WHY_VERA } from '@/data/why-vera'
 </script>
 
 <template>
-  <section class="border-b flex items-center section-height section">
+  <section class="border-b flex items-center py-10 sm:py-20 lg:py-0 min-h-screen section">
     <div class="container-custom w-full py-10 lg:!px-24">
       <h2 class="heading-1 text-center uppercase">Why Vera</h2>
 
