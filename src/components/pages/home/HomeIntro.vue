@@ -22,13 +22,13 @@ import AppNav from '@/components/layout/AppNav.vue'
 </script>
 
 <template>
-  <section class="py-10 sm:py-20 lg:py-0 min-h-screen border-b pb-20 section flex flex-col">
+  <section class="pb-10  pt-28 sm:py-20 lg:py-0 sm:min-h-screen border-b section flex flex-col">
     <AppNav />
     <div class="grow flex items-center">
-      <div class="flex flex-col items-center font-bold max-w-5xl mx-auto px-8 my-8">
+      <div class="flex flex-col items-center font-bold max-w-5xl mx-auto px-8 ">
         <TitleBadge title="your intelligent companion" />
 
-        <div class="mt-10 md:mt-6 relative">
+        <div class="mt-5 md:mt-6 relative">
           <!-- <img :src="HeaderLinesSvg" alt="" class="absolute -top-8 -left-4" /> -->
           <h1 class="title">
             DISCOVER THE <br />
@@ -59,7 +59,7 @@ import AppNav from '@/components/layout/AppNav.vue'
       </div>
     </div>
   </section>
-  <section class="py-10 sm:py-20 lg:py-0 min-h-screen border-b flex items-center section">
+  <section class="py-10 sm:py-20 lg:py-0 sm:min-h-screen border-b flex items-center section">
     <div class="grow container-custom">
       <div class="relative md:py-24 flex justify-center">
         <div class="relative max-w-screen-xl w-full ">
@@ -77,7 +77,7 @@ import AppNav from '@/components/layout/AppNav.vue'
           /> 
 
 </div>
-          <div class="flex  md:flex-row items-center gap-5 justify-between pt-10">
+          <div class="flex flex-col  md:flex-row items-center gap-5 justify-between pt-10">
             <div class="flex justify-center md:justify-start w-full lg:w-auto">
               <div class="flex flex-col gap-6">
                 <img :src="CircleLine" alt="" />

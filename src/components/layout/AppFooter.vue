@@ -23,11 +23,11 @@ const activeIndex = ref(0)
 
 <template>
   <footer class="bg-black pb-8 section">
-    <div class="rounded-bl-[140px] rounded-br-[140px] h-52 bg-white"></div>
-    <section class="max-w-screen-xl mx-auto sm:px-11 -mt-40">
-      <div class="md:rounded-3xl lg:rounded-full py-8 2xl:py-10 px-8 sm:px-20 bg-gradient">
+    <div class="rounded-bl-[140px] rounded-br-[140px] sm:h-52 bg-white"></div>
+    <section class="max-w-screen-xl mx-auto sm:px-11 sm:-mt-40">
+      <div class="md:rounded-3xl lg:rounded-full py-8 2xl:py-10 px-5 sm:px-8 md:px-20 bg-gradient">
         <h2
-          class="text-3xl xl:text-5xl 2xl:text-6xl font-bold mb-3 text-center text-white font-source-pro uppercase"
+          class="text-2xl sm:text-3xl xl:text-5xl 2xl:text-6xl font-bold mb-3 text-center text-white font-source-pro uppercase"
         >
           Ready to Get Started?
         </h2>
@@ -126,7 +126,7 @@ const activeIndex = ref(0)
 
       <!-- Copyright -->
       <div
-        class="bg-white/25 whitespace-nowrap flex-wrap gap-4 py-9 px-14 sm:rounded-full flex items-center justify-between text-[#6F6F6F] mt-10 sm:mt-24"
+        class="bg-white/25 whitespace-nowrap flex-wrap gap-2 sm:gap-4 py-4 sm:py-9 px-5 sm:px-14 sm:rounded-full flex items-center justify-between text-[#6F6F6F] mt-10 sm:mt-24"
       >
         <div class="">Copyright ©2024 VERA</div>
         <ul class="flex flex-wrap items-center gap-3">

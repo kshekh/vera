@@ -1,23 +1,24 @@
 <script setup lang="ts">
 import TitleBadge from '@/components/ui/TitleBadge.vue'
 
-import CTAImage from '@/assets/icons/cta-img.svg'
+import CTAImage from '@/assets/icons/get-support.svg'
 import CTABlock from '@/assets/icons/cta-block.svg'
 import ArrowRight from '@/assets/icons/arrow-right.svg'
 import ButtonCustom from '../ui/ButtonCustom.vue'
 </script>
 
 <template>
-  <section class="py-10 sm:py-20 lg:py-0 min-h-screen flex items-center section">
-    <div class="container-custom grow py-8">
+  <section class="py-10 sm:py-20 lg:py-0 sm:min-h-screen flex items-center section">
+    <div class="container-custom grow ">
       <div class="grid lg:grid-cols-2 gap-12 xl:gap-24">
         <div class="relative">
-          <img :src="CTAImage" alt="" class="w-full" />
-          <img :src="CTABlock" alt="" class="absolute top-[90%] right-3/4 hidden 2xl:block" />
+          <div className="border border-black/10 rounded-2xl p-5 flex justify-center items-center">
+          <img :src="CTAImage" alt="" class="h-60 sm:h-auto sm:w-full" /></div>
+          <img :src="CTABlock" alt="" class="-left-10 sm:-left-14 -bottom-10 sm:-bottom-24 w-40 sm:w-auto absolute block" />
         </div>
-        <div class="mt-11 row-start-1 lg:row-start-auto">
+        <div class="row-start-1 lg:row-start-auto space-y-5">
           <TitleBadge title="get support" />
-          <h2 class="mt-9 heading-1 uppercase">Elevate Your Productivity Today!</h2>
+          <h2 class="heading-1 uppercase">Elevate Your Productivity Today!</h2>
           <p class="xl:text-lg text-[#6F6F6F] my-5 lg:my-9">
             Don't miss out on experiencing the future of work. Embrace the power of Vera and unlock
             a world of endlesspossibilities. Increase productivity, streamline tasks, and enjoy the

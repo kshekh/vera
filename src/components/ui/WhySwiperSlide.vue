@@ -16,7 +16,7 @@ const props = defineProps<{
 
 <template>
   <div class="grid md:grid-cols-2 gap-20 ">
-    <div :class="`pt-12`">
+    <div :class="`pt-5 sm:pt-12`">
       <TitleBadge :title="props.badgeTitle" />
 
       <h3 class="uppercase heading-2 mt-6 leading-normal">{{ props.title }}</h3>
